@@ -24,11 +24,10 @@ export const SidebarProvider = ({ children }) => {
             openSidebar,
             closeSidebar,
         }}>
-            {{ children }}
+            { children }
         </SidebarContext.Provider>
     )
 }
-
-export const usesidebarContext = () => {
+export const useSidebarContext = () => {
     return useContext(SidebarContext);
 }

@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { usesidebarContext } from '../../context/sidebarContext';
+import { useSidebarContext } from '../../context/sidebarContext';
 function Navbar() {
-  const {openSidebar} = usesidebarContext();
+  const {openSidebar} = useSidebarContext();
   const [scrolled , setScrolled] = useState(false);
 
   const handlescroll = () => {
@@ -23,7 +23,7 @@ function Navbar() {
     <nav className={`navbar  bg-info-subtle w-100 ${scrolled ? 'position-fixed top-0' : ''} `}>
       <div className="container-fluid">
         <Link className="navbar-brand" to={'/'}>FOOD WEB LOGO</Link>
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button className="navbar-toggler"  onClick={() => openSidebar()} type="button"    >
           <span className="navbar-toggler-icon"></span>
         </button>
       </div>
