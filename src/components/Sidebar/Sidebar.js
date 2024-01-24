@@ -4,7 +4,7 @@ function Sidebar() {
   const {isSidebarOpen,closeSidebar} = useSidebarContext();
   return (
     <div>
-      <div className={`offcanvas offcanvas-end ${isSidebarOpen ? 'show' : ''}`} tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+      <div className={`offcanvas offcanvas-end ${isSidebarOpen ? 'show' : ''}`} tabIndex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
         <div className="offcanvas-header">
           <h5 className="offcanvas-title" id="offcanvasLabel">Offcanvas</h5>
           <button type="button" className="btn-close" onClick={() => closeSidebar()} data-bs-dismiss="offcanvas" aria-label="Close"></button>
