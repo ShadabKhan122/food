@@ -8,6 +8,13 @@ const initialState ={
     categoryMeal:[],
     categoryMealLoading:false,
     categoryMealError:false,
+    meals:[],
+    mealsLoading:false,
+    mealsError:false,
+    meal:[],
+    mealLoading:false,
+    mealError:false,
+
 
 }
 

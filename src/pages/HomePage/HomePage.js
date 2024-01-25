@@ -1,9 +1,10 @@
 import React from 'react'
+import { useMealContext } from '../../context/mealContext'
 
 function HomePage() {
   return (
     <div>
-      <p>hello</p>
+      
     </div>
   )
 }
