@@ -20,7 +20,7 @@ function Navbar() {
     window.addEventListener('scroll',handlescroll);
   })
   return (
-    <nav className={`navbar  bg-dark-subtle w-100 ${scrolled ? 'position-fixed top-0' : ''} `}>
+    <nav className={`navbar  bg-dark-subtle w-100 z-3 ${scrolled ? 'position-fixed top-0' : ''} `}>
       <div className="container-fluid">
         <Link className="navbar-brand" to={'/'}>LAJAWAB</Link>
         <button className="navbar-toggler"  onClick={() => openSidebar()} type="button"    >

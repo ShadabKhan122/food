@@ -29,6 +29,7 @@ export const startFetchSingleMeal=async(dispatch,id) => {
         dispatch({ type:FETCH_SINGLE_MEAL_BEGIN});
         const response = await axios.get(`${MEAL_SINGLE_URL}${id}`)
         dispatch({type:FETCH_SINGLE_MEAL_SUCCESS,payload : response.data.meals})
+        console.log(response  )
     }catch(error){
         dispatch({type:FETCH_SINGLE_MEAL_ERROR, payload:error.message});
     }
@@ -38,6 +39,7 @@ export const startFetchMealByCategory=async(dispatch,category) => {
         dispatch({ type:FETCH_CATEGORY_MEALS_BEGIN});
         const response = await axios.get(`${MEAL_CATEGORIES_URL}${category}`)
         dispatch({type:FETCH_CATEGORY_MEALS_SUCCESS,payload : response.data.meals})
+        console.log(response)
     }catch(error){
         dispatch({type:FETCH_CATEGORY_MEALS_ERROR, payload:error.message});
     }

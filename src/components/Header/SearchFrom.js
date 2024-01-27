@@ -8,7 +8,7 @@ function SearchFrom() {
           
           <input
             type="text"
-            class="form-control"
+            className="form-control"
             name="search"
             id="search"
             placeholder="Search reciepes here..."
